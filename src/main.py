@@ -80,6 +80,7 @@ def download_image(url, download_path = '', file_name = 'output.jpg'):
         print('FAILED - ', error)
 
 
+# Change query, delay and desired quantity of images
 urls = get_urls(driver, QUERY, 1.3, 7)
 for i, url in enumerate(urls):
     download_image(url, 'output/',str(i) + '.jpg')
